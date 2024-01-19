@@ -1,0 +1,207 @@
+[debug] [2024-01-19T17:37:47.482Z] ----------------------------------------------------------------------
+[debug] [2024-01-19T17:37:47.484Z] Command:       C:\Program Files (x86)\nodejs\node.exe C:\Users\pc\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2024-01-19T17:37:47.485Z] CLI Version:   13.0.3
+[debug] [2024-01-19T17:37:47.485Z] Platform:      win32
+[debug] [2024-01-19T17:37:47.485Z] Node Version:  v18.14.0
+[debug] [2024-01-19T17:37:47.486Z] Time:          Fri Jan 19 2024 13:37:47 GMT-0400 (hora de Venezuela)
+[debug] [2024-01-19T17:37:47.487Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-01-19T17:37:47.495Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-01-19T17:37:47.495Z] > authorizing via signed-in user (consenacapoter@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\pc\Desktop\neverland
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2024-01-19T17:38:51.337Z] > refreshing access token with scopes: []
+[debug] [2024-01-19T17:38:51.341Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2024-01-19T17:38:51.341Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-01-19T17:38:51.428Z] *** [apiv2] error from fetch(https://www.googleapis.com/oauth2/v3/token, {"headers":{},"method":"POST","body":{"_overheadLength":545,"_valueLength":212,"_valuesToMeasure":[],"writable":false,"readable":true,"dataSize":0,"maxDataSize":2097152,"pauseStreams":true,"_released":true,"_streams":[],"_currentStream":null,"_insideLoop":false,"_pendingNext":false,"_boundary":"--------------------------973147153952416836658483","_events":{},"_eventsCount":1}}): FetchError: request to https://www.googleapis.com/oauth2/v3/token failed, reason: getaddrinfo ENOTFOUND www.googleapis.com
+[debug] [2024-01-19T17:38:51.428Z] Authentication Error: Your credentials are no longer valid. Please run firebase login --reauth
+
+For CI servers and headless environments, generate a new token with firebase login:ci
+[debug] [2024-01-19T17:38:51.435Z] FirebaseError: Authentication Error: Your credentials are no longer valid. Please run firebase login --reauth
+
+For CI servers and headless environments, generate a new token with firebase login:ci
+    at invalidCredentialError (C:\Users\pc\AppData\Roaming\npm\node_modules\firebase-tools\lib\auth.js:142:12)
+    at refreshTokens (C:\Users\pc\AppData\Roaming\npm\node_modules\firebase-tools\lib\auth.js:506:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async Client.getAccessToken (C:\Users\pc\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:156:22)
+    at async Client.addAuthHeader (C:\Users\pc\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:147:21)
+    at async Client.request (C:\Users\pc\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:103:34)
+    at async getProjectPage (C:\Users\pc\AppData\Roaming\npm\node_modules\firebase-tools\lib\management\projects.js:238:17)
+    at async getFirebaseProjectPage (C:\Users\pc\AppData\Roaming\npm\node_modules\firebase-tools\lib\management\projects.js:255:23)
+    at async selectProjectInteractively (C:\Users\pc\AppData\Roaming\npm\node_modules\firebase-tools\lib\management\projects.js:94:41)
+    at async doSetup (C:\Users\pc\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\features\project.js:88:27)
+[error] 
+[error] Error: Failed to list Firebase projects. See firebase-debug.log for more info.
+[debug] [2024-01-19T17:39:13.541Z] ----------------------------------------------------------------------
+[debug] [2024-01-19T17:39:13.543Z] Command:       C:\Program Files (x86)\nodejs\node.exe C:\Users\pc\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2024-01-19T17:39:13.544Z] CLI Version:   13.0.3
+[debug] [2024-01-19T17:39:13.544Z] Platform:      win32
+[debug] [2024-01-19T17:39:13.544Z] Node Version:  v18.14.0
+[debug] [2024-01-19T17:39:13.545Z] Time:          Fri Jan 19 2024 13:39:13 GMT-0400 (hora de Venezuela)
+[debug] [2024-01-19T17:39:13.546Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-01-19T17:39:13.554Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-01-19T17:39:13.554Z] > authorizing via signed-in user (consenacapoter@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\pc\Desktop\neverland
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2024-01-19T17:39:31.316Z] > refreshing access token with scopes: []
+[debug] [2024-01-19T17:39:31.319Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2024-01-19T17:39:31.319Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-01-19T17:39:42.732Z] *** [apiv2] error from fetch(https://www.googleapis.com/oauth2/v3/token, {"headers":{},"method":"POST","body":{"_overheadLength":545,"_valueLength":212,"_valuesToMeasure":[],"writable":false,"readable":true,"dataSize":0,"maxDataSize":2097152,"pauseStreams":true,"_released":true,"_streams":[],"_currentStream":null,"_insideLoop":false,"_pendingNext":false,"_boundary":"--------------------------334912261701356046228879","_events":{},"_eventsCount":1}}): FetchError: request to https://www.googleapis.com/oauth2/v3/token failed, reason: getaddrinfo ENOTFOUND www.googleapis.com
+[debug] [2024-01-19T17:39:42.733Z] Authentication Error: Your credentials are no longer valid. Please run firebase login --reauth
+
+For CI servers and headless environments, generate a new token with firebase login:ci
+[debug] [2024-01-19T17:39:42.756Z] FirebaseError: Authentication Error: Your credentials are no longer valid. Please run firebase login --reauth
+
+For CI servers and headless environments, generate a new token with firebase login:ci
+    at invalidCredentialError (C:\Users\pc\AppData\Roaming\npm\node_modules\firebase-tools\lib\auth.js:142:12)
+    at refreshTokens (C:\Users\pc\AppData\Roaming\npm\node_modules\firebase-tools\lib\auth.js:506:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async Client.getAccessToken (C:\Users\pc\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:156:22)
+    at async Client.addAuthHeader (C:\Users\pc\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:147:21)
+    at async Client.request (C:\Users\pc\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:103:34)
+    at async getProjectPage (C:\Users\pc\AppData\Roaming\npm\node_modules\firebase-tools\lib\management\projects.js:238:17)
+    at async getFirebaseProjectPage (C:\Users\pc\AppData\Roaming\npm\node_modules\firebase-tools\lib\management\projects.js:255:23)
+    at async selectProjectInteractively (C:\Users\pc\AppData\Roaming\npm\node_modules\firebase-tools\lib\management\projects.js:94:41)
+    at async doSetup (C:\Users\pc\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\features\project.js:88:27)
+[error] 
+[error] Error: Failed to list Firebase projects. See firebase-debug.log for more info.
+[debug] [2024-01-19T17:40:11.736Z] ----------------------------------------------------------------------
+[debug] [2024-01-19T17:40:11.738Z] Command:       C:\Program Files (x86)\nodejs\node.exe C:\Users\pc\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2024-01-19T17:40:11.739Z] CLI Version:   13.0.3
+[debug] [2024-01-19T17:40:11.739Z] Platform:      win32
+[debug] [2024-01-19T17:40:11.739Z] Node Version:  v18.14.0
+[debug] [2024-01-19T17:40:11.741Z] Time:          Fri Jan 19 2024 13:40:11 GMT-0400 (hora de Venezuela)
+[debug] [2024-01-19T17:40:11.741Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-01-19T17:40:11.749Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-01-19T17:40:11.750Z] > authorizing via signed-in user (consenacapoter@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\pc\Desktop\neverland
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2024-01-19T17:40:47.559Z] > refreshing access token with scopes: []
+[debug] [2024-01-19T17:40:47.562Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2024-01-19T17:40:47.562Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-01-19T17:40:51.596Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2024-01-19T17:40:51.597Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-01-19T17:40:51.735Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2024-01-19T17:40:56.935Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2024-01-19T17:40:56.936Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Using project neverlard (Neverlard) 
+[info] 
+=== Hosting Setup
+[debug] [2024-01-19T17:41:02.606Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/neverlard [none]
+[debug] [2024-01-19T17:41:08.952Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/neverlard 200
+[debug] [2024-01-19T17:41:08.954Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/neverlard {"projectId":"neverlard","projectNumber":"450131051308","displayName":"Neverlard","name":"projects/neverlard","resources":{"hostingSite":"neverlard"},"state":"ACTIVE","etag":"1_617a5fae-06e4-4c3e-a64d-6b066be03e1d"}
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[debug] [2024-01-19T17:42:10.486Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/releases.json [none]
+[debug] [2024-01-19T17:42:17.197Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/releases.json 200
+[debug] [2024-01-19T17:42:17.198Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/releases.json {"current":{"version":"10.7.2","browserURL":"https://www.gstatic.com/firebasejs/10.7.2/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/10.7.2/firebase.tgz"},"live":{"version":"10.7","browserURL":"https://www.gstatic.com/firebasejs/live/10.7/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/live/10.7/firebase.tgz"},"components":{"analytics":"https://www.gstatic.com/firebasejs/10.7.2/firebase-analytics.js","app":"https://www.gstatic.com/firebasejs/10.7.2/firebase-app.js","app-check":"https://www.gstatic.com/firebasejs/10.7.2/firebase-app-check.js","auth":"https://www.gstatic.com/firebasejs/10.7.2/firebase-auth.js","auth/cordova":"https://www.gstatic.com/firebasejs/10.7.2/firebase-auth/cordova.js","functions":"https://www.gstatic.com/firebasejs/10.7.2/firebase-functions.js","firestore":"https://www.gstatic.com/firebasejs/10.7.2/firebase-firestore.js","firestore/lite":"https://www.gstatic.com/firebasejs/10.7.2/firebase-firestore/lite.js","installations":"https://www.gstatic.com/firebasejs/10.7.2/firebase-installations.js","storage":"https://www.gstatic.com/firebasejs/10.7.2/firebase-storage.js","performance":"https://www.gstatic.com/firebasejs/10.7.2/firebase-performance.js","remote-config":"https://www.gstatic.com/firebasejs/10.7.2/firebase-remote-config.js","messaging":"https://www.gstatic.com/firebasejs/10.7.2/firebase-messaging.js","messaging/sw":"https://www.gstatic.com/firebasejs/10.7.2/firebase-messaging/sw.js","database":"https://www.gstatic.com/firebasejs/10.7.2/firebase-database.js","firestore.memory":"https://www.gstatic.com/firebasejs/10.7.2/firebase-firestore.memory.js"}}
+[info] +  Wrote public/index.html 
+[info] 
+[info] i  Detected a .git folder at C:\Users\pc\Desktop\neverland 
+[info] i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=908029660&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
+[info] 
+[info] Waiting for authentication...
+[debug] [2024-01-19T17:44:36.270Z] >>> [apiv2][query] POST https://github.com/login/oauth/access_token [none]
+[debug] [2024-01-19T17:44:36.271Z] >>> [apiv2][body] POST https://github.com/login/oauth/access_token [stream]
+[debug] [2024-01-19T17:44:38.550Z] <<< [apiv2][status] POST https://github.com/login/oauth/access_token 200
+[debug] [2024-01-19T17:44:38.551Z] <<< [apiv2][body] POST https://github.com/login/oauth/access_token {"access_token":"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","token_type":"bearer","scope":"read:user,repo"}
+[debug] [2024-01-19T17:44:38.650Z] >>> [apiv2][query] GET https://api.github.com/user [none]
+[debug] [2024-01-19T17:44:41.553Z] <<< [apiv2][status] GET https://api.github.com/user 200
+[debug] [2024-01-19T17:44:41.554Z] <<< [apiv2][body] GET https://api.github.com/user {"login":"FernandoDav","id":157043091,"node_id":"U_kgDOCVxJkw","avatar_url":"https://avatars.githubusercontent.com/u/157043091?v=4","gravatar_id":"","url":"https://api.github.com/users/FernandoDav","html_url":"https://github.com/FernandoDav","followers_url":"https://api.github.com/users/FernandoDav/followers","following_url":"https://api.github.com/users/FernandoDav/following{/other_user}","gists_url":"https://api.github.com/users/FernandoDav/gists{/gist_id}","starred_url":"https://api.github.com/users/FernandoDav/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/FernandoDav/subscriptions","organizations_url":"https://api.github.com/users/FernandoDav/orgs","repos_url":"https://api.github.com/users/FernandoDav/repos","events_url":"https://api.github.com/users/FernandoDav/events{/privacy}","received_events_url":"https://api.github.com/users/FernandoDav/received_events","type":"User","site_admin":false,"name":null,"company":null,"blog":"","location":null,"email":null,"hireable":null,"bio":null,"twitter_username":null,"public_repos":1,"public_gists":0,"followers":0,"following":0,"created_at":"2024-01-18T16:02:28Z","updated_at":"2024-01-18T16:02:28Z","private_gists":0,"total_private_repos":0,"owned_private_repos":0,"disk_usage":2,"collaborators":0,"two_factor_authentication":false,"plan":{"name":"free","space":976562499,"collaborators":0,"private_repos":10000}}
+[info] 
+[info] +  Success! Logged into GitHub as FernandoDav 
+[info] 
+[debug] [2024-01-19T17:45:27.139Z] >>> [apiv2][query] GET https://api.github.com/repos/neverland/actions/secrets/public-key type=owner
+[debug] [2024-01-19T17:45:27.699Z] <<< [apiv2][status] GET https://api.github.com/repos/neverland/actions/secrets/public-key 404
+[debug] [2024-01-19T17:45:27.699Z] <<< [apiv2][body] GET https://api.github.com/repos/neverland/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[info] 
+[info] 
+[error] !  The provided authorization cannot be used with this repository. If this repository is in an organization, did you remember to grant access? 
+[info] 
+[info] i  Action required: Visit this URL to ensure access has been granted to the appropriate organization(s) for the Firebase CLI GitHub OAuth App: 
+[info] https://github.com/settings/connections/applications/89cf50f02ac6aaed3484
+[info] 
+[debug] [2024-01-19T17:46:14.025Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2024-01-19T17:46:15.238Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 404
+[debug] [2024-01-19T17:46:15.238Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[info] 
+[info] 
+[error] !  The provided authorization cannot be used with this repository. If this repository is in an organization, did you remember to grant access? 
+[info] 
+[info] i  Action required: Visit this URL to ensure access has been granted to the appropriate organization(s) for the Firebase CLI GitHub OAuth App: 
+[info] https://github.com/settings/connections/applications/89cf50f02ac6aaed3484
+[info] 
+[debug] [2024-01-19T17:48:40.090Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2024-01-19T17:48:51.553Z] *** [apiv2] error from fetch(https://api.github.com/repos//actions/secrets/public-key?type=owner, {"headers":{},"method":"GET"}): FetchError: request to https://api.github.com/repos//actions/secrets/public-key?type=owner failed, reason: getaddrinfo ENOTFOUND api.github.com
+[debug] [2024-01-19T17:48:58.771Z] >>> [apiv2][query] GET https://api.github.com/repos/y/actions/secrets/public-key type=owner
+[debug] [2024-01-19T17:49:19.813Z] *** [apiv2] error from fetch(https://api.github.com/repos/y/actions/secrets/public-key?type=owner, {"headers":{},"method":"GET"}): FetchError: request to https://api.github.com/repos/y/actions/secrets/public-key?type=owner failed, reason: connect ETIMEDOUT 140.82.112.5:443
+[debug] [2024-01-19T17:49:55.566Z] >>> [apiv2][query] GET https://api.github.com/repos/user/repository/neverland/actions/secrets/public-key type=owner
+[debug] [2024-01-19T17:50:07.006Z] *** [apiv2] error from fetch(https://api.github.com/repos/user/repository/neverland/actions/secrets/public-key?type=owner, {"headers":{},"method":"GET"}): FetchError: request to https://api.github.com/repos/user/repository/neverland/actions/secrets/public-key?type=owner failed, reason: getaddrinfo ENOTFOUND api.github.com
+[debug] [2024-01-19T17:50:47.646Z] >>> [apiv2][query] GET https://api.github.com/repos/https://github.com/FernandoDav/neverland/actions/secrets/public-key type=owner
+[debug] [2024-01-19T17:51:08.687Z] *** [apiv2] error from fetch(https://api.github.com/repos/https://github.com/FernandoDav/neverland/actions/secrets/public-key?type=owner, {"headers":{},"method":"GET"}): FetchError: request to https://api.github.com/repos/https://github.com/FernandoDav/neverland/actions/secrets/public-key?type=owner failed, reason: connect ETIMEDOUT 140.82.113.6:443
+[debug] [2024-01-19T18:10:20.925Z] >>> [apiv2][query] GET https://api.github.com/repos/./actions/secrets/public-key type=owner
+[debug] [2024-01-19T18:10:23.386Z] <<< [apiv2][status] GET https://api.github.com/repos/./actions/secrets/public-key 404
+[debug] [2024-01-19T18:10:23.386Z] <<< [apiv2][body] GET https://api.github.com/repos/./actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[info] 
+[info] 
+[error] !  The provided authorization cannot be used with this repository. If this repository is in an organization, did you remember to grant access? 
+[info] 
+[info] i  Action required: Visit this URL to ensure access has been granted to the appropriate organization(s) for the Firebase CLI GitHub OAuth App: 
+[info] https://github.com/settings/connections/applications/89cf50f02ac6aaed3484
+[info] 
