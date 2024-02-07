@@ -2,7 +2,7 @@ Proyecto Neverland
 Participantes del grupo
 Sección 1
 #Fernando Díaz 30547287
-#Yoranny Hevia  
+#Yoranny Hevia  31053802
 #Gustavo Graterol 30091118
 
 
